@@ -1,0 +1,128 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #070d1e 0%, #0a1931 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+  background-color: rgba(7, 13, 30, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(5, 10, 24, 0.95) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #10b981, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  color: rgba(241, 245, 249, 0.85) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #10b981 !important;
+  transform: translateY(-1px);
+}
+
+/* Tombol Navbar */
+.btn-login {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f1f5f9;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.4rem 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #34d399;
+  transform: translateY(-1px);
+}
+
+.btn-register, .btn-primary {
+  background: linear-gradient(135deg, #059669, #10b981);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-register:hover, .btn-primary:hover {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.55);
+}
+
+/* Card Form Login */
+.login-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+  max-width: 420px;
+  margin: auto;
+}
+
+/* Input Fields */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+  border-color: #10b981;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+}
+
+a {
+  color: #34d399;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #6ee7b7;
+  text-decoration: underline;
+}
